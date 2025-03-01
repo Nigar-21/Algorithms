@@ -1,13 +1,18 @@
 //user validation
- const userValidation=(str)=>{
-if(  
-      str.length>=4 && str.length<=25 && (/[a-z A-Z]/).test(str.slice(0,1)/*str.charAt(0)*/)&& (/^\w+$/).test(str) && (/[a-zA-Z0-9]/).test(str.slice(-1)/*str.charAt(str.length-1)*/)){
-return true
-}else{
-    return false
-}
-}
-console.log(userValidation("u__hello__world1d23"))
+const userValidation = (str) => {
+  if (
+    str.length >= 4 &&
+    str.length <= 25 &&
+    /[a-z A-Z]/.test(str.slice(0, 1) /*str.charAt(0)*/) &&
+    /^\w+$/.test(str) &&
+    /[a-zA-Z0-9]/.test(str.slice(-1) /*str.charAt(str.length-1)*/)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(userValidation("u__hello__world1d23"));
 /*Rules
 1. the username is between 4 and 25 characters
 2. it must start with a letter
