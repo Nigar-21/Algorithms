@@ -10,7 +10,7 @@ const longestWord =(sen)=>{
 
 
 /*
-Logest Word
+Longest Word
 
 -using the javascript language,have the function longestWord(sen take the sen parameter being passed and return the longest word in the string
 
