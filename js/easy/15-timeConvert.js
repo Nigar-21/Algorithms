@@ -1,9 +1,9 @@
 const timeConvert = (nums) =>{
-const min = num % 60
-const hour = Math.floor(num/60)
+const min = nums % 60
+const hour = Math.floor(nums/60)
 return hour +":" +min // or return `${Math.floor(min)}:${num%60}`
 }
-console.log(timeConvert());
+console.log(timeConvert(105));
 
 
 /*
