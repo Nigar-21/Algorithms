@@ -4,14 +4,11 @@ const insertPosition = (nums, target) => {
   if (nums.includes(target)) {
     return nums.indexOf(target);
   } else {for (let index = 0; index < nums.length; index++) {
-    if (nums[index] > target) {
+    if (target<nums[index]) {
         return index;
     }
-    else {
-        return nums.length;
-    }
-    
 }
+    return nums.length;
 }
 }
 
